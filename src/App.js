@@ -23,7 +23,7 @@ const App = () => {
       element : <><Navbar /><Portfolio /></>
     },
     {
-      path : "contact",
+      path : "/contact",
       element : <><Navbar /><Contact /></>
     },
   ])
