@@ -37,7 +37,7 @@ const Portfolio = () => {
     selectedCategory === 'All' ? projects : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className='bg-customDarkGray border rounded-b-3xl border-zinc-800 ml-10 min-h-screen p-8 max-w-4xl'>
+    <div className='bg-customDarkGray border rounded-b-3xl w-full border-zinc-800 sm:max-2xl:ml-10 min-h-screen p-8 max-w-4xl'>
       <h1 className='text-yellow-400 text-3xl font-bold'>Portfolio</h1>
       <hr className='mt-2 mb-4'></hr>
 

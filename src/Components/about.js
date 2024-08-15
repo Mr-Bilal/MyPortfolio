@@ -33,7 +33,7 @@ const About = () => {
   };
 
   return (
-    <div className='bg-customDarkGray border border-zinc-800 rounded-b-3xl ml-10 min-h-screen p-8 max-w-4xl relative z-0'>
+    <div className='bg-customDarkGray border w-screen border-zinc-800 rounded-b-3xl ml-10 min-h-screen p-8 max-w-4xl relative z-0'>
       <h1 className='text-yellow-400 text-3xl font-bold'>About Me</h1>
       <hr className='mt-2 mb-4' />
 

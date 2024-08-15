@@ -23,13 +23,13 @@ const Contact = () => {
           );
     };
   return (
-    <div className='bg-customDarkGray border rounded-b-3xl border-zinc-800 ml-10 min-h-screen p-8 max-w-4xl'>
+    <div className='bg-customDarkGray border w-full rounded-b-3xl border-zinc-800 sm:max-2xl:ml-10 min-h-screen p-8 max-w-4xl'>
       <h1 className='text-3xl font-bold text-yellow-400'>Contact</h1>
       <hr className='mt-2 mb-4'></hr>
 
       <section>
         <div>
-            <h3 className='text-2xl mt-5 ml-80 font-semibold text-yellow-300'>Contact Form</h3>
+            <h3 className='text-2xl mt-5 sm:ml-80 font-semibold text-yellow-300'>Contact Form</h3>
             <form className='flex flex-col items-center' ref={form} onSubmit={sendEmail}>
                 <input type='text' className='bg-neutral-700 placeholder-white text-white border rounded-xl mt-6 w-2/3 h-11 ' placeholder=' Your Name' name='from_name'/>
                 <input type='email' className='bg-neutral-700 placeholder-white text-white mt-6 w-2/3 h-11 border rounded-xl' placeholder=' Your Email' name='from_email'/>

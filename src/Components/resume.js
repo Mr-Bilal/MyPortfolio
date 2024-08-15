@@ -4,7 +4,7 @@ import {faBookOpen , faWandMagicSparkles} from '@fortawesome/free-solid-svg-icon
 
 const Resume = () => {
   return (
-    <div className='bg-customDarkGray border rounded-b-3xl border-zinc-800 ml-10 min-h-screen p-8 max-w-4xl'>
+    <div className='bg-customDarkGray border w-full rounded-b-3xl border-zinc-800 ml-10 min-h-screen p-8 max-w-4xl'>
       <h1 className='text-yellow-400 text-3xl font-bold'>Resume </h1><hr className='mt-2 mb-4'></hr>
 
       <section className='mb-8'>

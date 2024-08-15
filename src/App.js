@@ -44,7 +44,7 @@ const App = () => {
   ]);
 
   return (
-    <div className="flex max-w-7xl">
+    <div className="lg:max-2xl:flex lg:max-2xl:max-w-7xl">
       <Sidebar />
       <div className="flex flex-col w-full">
         <RouterProvider router={router} />
