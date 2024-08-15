@@ -33,7 +33,7 @@ const About = () => {
   };
 
   return (
-    <div className='bg-customDarkGray border w-screen border-zinc-800 rounded-b-3xl ml-10 min-h-screen p-8 max-w-4xl relative z-0'>
+    <div className='bg-customDarkGray border w-screen border-zinc-800 rounded-b-3xl sm:max-2xl:ml-10 min-h-screen p-8 max-w-4xl relative z-0'>
       <h1 className='text-yellow-400 text-3xl font-bold'>About Me</h1>
       <hr className='mt-2 mb-4' />
 
@@ -49,7 +49,38 @@ const About = () => {
         </p>
       </section>
 
-      <section className='mb-9'>
+      <section className='mb-9 lg:hidden'>
+        <h3 className='text-yellow-300 text-2xl font-bold mb-5'>
+          What I'm Doing
+        </h3>
+        <ul className='grid-cols-2 bg-customDarkGray'>
+          <li className='border p-3 rounded-2xl flex mb-4'>
+            <div className='flex'>
+              <img src={webdesign} alt='Design' height={60} width={60} />
+            </div>
+            <div className='text-left p-2'>
+              <h4 className="text-white text-xl font-bold mb-2">Web Design</h4>
+              <p className="text-base text-zinc-300 leading-relaxed">
+                The most modern and high-quality design made at a professional level.
+              </p>
+            </div>
+          </li>
+          <li className='border p-3 rounded-2xl flex'>
+            <div className='flex'>
+              <img src={webdevelopment} alt='Design' height={60} width={60} />
+            </div>
+            <div className='text-left p-2'>
+              <h4 className="text-white text-xl font-bold mb-2">Web Development</h4>
+              <p className="text-base text-zinc-300 leading-relaxed">
+                The most modern and high-quality site made at a professional level.
+              </p>
+            </div>
+          </li>
+          
+        </ul>
+      </section>
+
+      <section className='mb-9 hidden lg:block'>
         <h3 className='text-yellow-300 text-2xl font-bold mb-5'>
           What I'm Doing
         </h3>
