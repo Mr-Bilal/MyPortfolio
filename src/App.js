@@ -13,6 +13,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const App = () => {
   const router = createBrowserRouter([
     {
+      path: "/MyPortfolio",
+      element: <><Navbar /><About /></>,
+      errorElement: <ErrorPage />, // Handles errors in this route
+    },
+    {
       path: "/",
       element: <><Navbar /><About /></>,
       errorElement: <ErrorPage />, // Handles errors in this route
