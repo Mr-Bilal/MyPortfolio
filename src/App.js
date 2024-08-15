@@ -2,37 +2,47 @@ import React from 'react';
 import Sidebar from './Components/sidebar';
 import Navbar from './Components/Navbar';
 import About from './Components/about';
-import Resume from './Components/resume'
-import Portfolio from './Components/portfolio'
-import Contact from './Components/contact'
+import Resume from './Components/resume';
+import Portfolio from './Components/portfolio';
+import Contact from './Components/contact';
+import NotFound from './Components/NotFound'; // A custom 404 component
+import ErrorPage from './Components/ErrorPage'; // A custom error boundary component
 import './App.css';
-import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const App = () => {
   const router = createBrowserRouter([
     {
-      path : "/about",
-      element : <><Navbar /><About /></>
+      path: "/",
+      element: <><Navbar /><About /></>,
+      errorElement: <ErrorPage />, // Handles errors in this route
     },
     {
-      path : "/resume",
-      element : <><Navbar /><Resume /></>
+      path: "/resume",
+      element: <><Navbar /><Resume /></>,
+      errorElement: <ErrorPage />,
     },
     {
-      path : "/portfolio",
-      element : <><Navbar /><Portfolio /></>
+      path: "/portfolio",
+      element: <><Navbar /><Portfolio /></>,
+      errorElement: <ErrorPage />,
     },
     {
-      path : "/contact",
-      element : <><Navbar /><Contact /></>
+      path: "/contact",
+      element: <><Navbar /><Contact /></>,
+      errorElement: <ErrorPage />,
     },
-  ])
+    {
+      path: "*", // Fallback for any undefined paths
+      element: <><Navbar /><NotFound /></>,
+    },
+  ]);
+
   return (
     <div className="flex max-w-7xl">
       <Sidebar />
       <div className="flex flex-col w-full">
-        
-        <RouterProvider router = {router} />
+        <RouterProvider router={router} />
       </div>
     </div>
   );
