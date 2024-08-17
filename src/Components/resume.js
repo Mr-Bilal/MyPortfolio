@@ -14,14 +14,14 @@ const Resume = () => {
         </div>
         <ol className='ml-11 text-base'>
           <li className='relative mb-5 list-none'>
-            <h4 className='font-bold mb-2 leading-6'>Ripa International University</h4>
+            <h4 className='font-bold mb-2 leading-6'>Riphah International University</h4>
             <span className='text-yellow-500 leading-relaxed font-normal'>2021 — 2025</span>
             <p className='max-w-2xl text-zinc-300 font-light leading-relaxed'>
               I am doing BS in Computer Science and my area of interest is web development.
             </p>
           </li>
           <li className='relative mb-5 list-none'>
-            <h4 className='font-bold mb-2 leading-6'>Punjab College (cant campus)</h4>
+            <h4 className='font-bold mb-2 leading-6'>Punjab College (cant campus rawalpindi)</h4>
             <span className='text-yellow-500 leading-relaxed font-normal'>2019 — 2020</span>
             <p className='max-w-2xl text-zinc-300 font-light leading-relaxed'>
               I have done Intermediate in Computer Science from punjab college.
@@ -31,7 +31,7 @@ const Resume = () => {
             <h4 className='font-bold mb-2 leading-6'>IMCB (G-10/4)</h4>
             <span className='text-yellow-500 leading-relaxed font-normal'>2009 — 2018</span>
             <p className='max-w-2xl text-zinc-300 font-light leading-relaxed'>
-              I have done my scooling from IMCB.
+              I have done my schooling from IMCB.
             </p>
           </li>          
         </ol>
@@ -45,7 +45,7 @@ const Resume = () => {
         <ol className='ml-11 text-base'>
           <li className='relative mb-5 list-none'>
             <h4 className='font-bold mb-2 leading-6'>Internee at ESFORGE Pvt. Ltd</h4>
-            <span className='text-yellow-500 leading-relaxed font-normal'>June 2024 — July 2024</span>
+            <span className='text-yellow-500 leading-relaxed font-normal'>June 2024 — August 2024</span>
             <p className='max-w-2xl text-zinc-300 font-light leading-relaxed'>
               It was a great experienceat at esforge it boost my learning and help me grow in my field and 
               i am doing react web development there.

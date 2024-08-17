@@ -4,23 +4,19 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import project1 from '../Assets/project-1.jpg'
 import project2 from '../Assets/project-2.png'
 import project3 from '../Assets/project-3.jpg'
-import project4 from '../Assets/project-4.png'
 import project5 from '../Assets/project-5.png'
 import project6 from '../Assets/project-6.png'
 import project7 from '../Assets/project-7.png'
-import project8 from '../Assets/project-8.jpg'
 import project9 from '../Assets/project-9.png'
 
-const categories = ['All', 'Web Design', 'Applications', 'Web Development'];
+const categories = ['All', 'Web Design', 'Web Development'];
 const projects = [
   { id: 1, title: 'Finance', category: 'Web Development', image: project1 },
   { id: 2, title: 'Orizon', category: 'Web Development', image: project2 },
   { id: 3, title: 'Fundo', category: 'Web Design', image: project3 },
-  { id: 4, title: 'Brawlhalla', category: 'Applications', image: project4 },
   { id: 5, title: 'DSM.', category: 'Web Design', image: project5 },
   { id: 6, title: 'MetaSpark', category: 'Web Design', image: project6 },
   { id: 7, title: 'Summary', category: 'Web Development', image: project7 },
-  { id: 8, title: 'Task Manager', category: 'Applications', image: project8 },
   { id: 9, title: 'Finance', category: 'Web Development', image: project9 },
 ];
 
