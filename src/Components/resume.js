@@ -1,6 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBookOpen , faWandMagicSparkles} from '@fortawesome/free-solid-svg-icons';
+import projecticon from '../Assets/projecticon.png';
+import codeicon from '../Assets/codeicon.png';
+import toolicon from '../Assets/toolicon.png';
 
 const Resume = () => {
   return (
@@ -26,14 +29,7 @@ const Resume = () => {
             <p className='max-w-2xl text-zinc-300 font-light leading-relaxed'>
               I have done Intermediate in Computer Science from punjab college.
             </p>
-          </li>
-          <li className='relative mb-5 list-none'>
-            <h4 className='font-bold mb-2 leading-6'>IMCB (G-10/4)</h4>
-            <span className='text-yellow-500 leading-relaxed font-normal'>2009 — 2018</span>
-            <p className='max-w-2xl text-zinc-300 font-light leading-relaxed'>
-              I have done my schooling from IMCB.
-            </p>
-          </li>          
+          </li>         
         </ol>
       </section>
 
@@ -54,53 +50,79 @@ const Resume = () => {
         </ol>
       </section>
 
-      <section>
+      <section className='w-screen max-w-3xl my-0 mx-auto text-center flex flex-col justify-center pb-12'>
         <div className='flex items-center gap-4 mb-6'>
           <div className=''><FontAwesomeIcon icon={faWandMagicSparkles} className="mr-3 mb-4" /></div>
           <h3 className='text-yellow-300 text-2xl font-bold mb-5'>My Skills</h3>
         </div>
-        <ul className='p-8 pt-7 relative bg-neutral-700 rounded-2xl cursor-pointer z-10'>
-          <li className='mb-6'>
-            <div className='flex items-center gap-1 mb-2' >
-              <h5 className='text-base font-semibold'>Web Design</h5>
-              <data className='text-base font-light text-zinc-300' value={80}>80%</data>
+        <div className='w-full max-h-96 overflow-auto scrollbar-none'>
+            <div className='flex justify-around flex-wrap w-full items-center'>
+                <span className='text-center flex flex-col items-center cursor-pointer hover:bg-yellow-300 hover:text-black m-3 w-56 h-80 align-top bg-transparent border text-white pb-5 rounded-xl transition ease-in-out duration-300 shadow-md'>
+                    <img src={projecticon} alt='icon' className='ex' /><br></br>
+                    <h3 className='mb-2 text-lg font-semibold'>ACADEMIC PROJECTS</h3>
+                    <ul>
+                        <li>Inventory Management System (C++)</li>
+                        <li>Gym Management System (C++)</li>
+                        <li>Regex Solver (C++) </li>
+                        <li>Library System (Java)</li>
+                    </ul>
+                </span>
+                <span className='text-center flex flex-col items-center cursor-pointer hover:bg-yellow-300 hover:text-black m-3 w-56 h-80 align-top bg-transparent border text-white pb-5 rounded-xl transition ease-in-out duration-300 shadow-md'>
+                    <img src={codeicon} alt='icon' className='explogo' /><br></br>
+                    <h3 className='mb-2 text-lg font-semibold'>PROGRAMMING LANGUAGES</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </span>
+                <span className='text-center flex flex-col items-center cursor-pointer hover:bg-yellow-300 hover:text-black m-3 w-56 h-80 align-top bg-transparent border text-white pb-5 rounded-xl transition ease-in-out duration-300 shadow-md'>
+                    <img src={toolicon} alt='icon' className='explogo' /><br></br>
+                    <h3 className='mb-2 text-lg font-semibold'>TOOLS</h3>
+                    <ul>
+                        <li>VS CODE</li>
+                        <li>GIT</li>
+                        <li>Collab</li>
+                        <li>Canva</li>
+                    </ul>
+                </span>
             </div>
-            <div className='w-full h-2 bg-white rounded-lg' >
-              <div className='bg-yellow-400 w-4/5 h-full rounded' >
-              </div>
+            <div className='flex justify-around flex-wrap w-full items-center'>
+                <span className='text-center flex flex-col items-center cursor-pointer hover:bg-yellow-300 hover:text-black m-3 w-56 h-80 align-top bg-transparent border text-white pb-5 rounded-xl transition ease-in-out duration-300 shadow-md'>
+                    <img src={projecticon} alt='icon' className='explogo' /><br></br>
+                    <h3 className='mb-2 text-lg font-semibold'>ACADEMIC PROJECTS</h3>
+                    <ul>
+                        <li>Inventory Management System (C++)</li>
+                        <li>Gym Management System (C++)</li>
+                        <li>Regex Solver (C++) </li>
+                        <li>Library System (Java)</li>
+                    </ul>
+                </span>
+                <span className='text-center flex flex-col items-center cursor-pointer hover:bg-yellow-300 hover:text-black m-3 w-56 h-80 align-top bg-transparent border text-white pb-5 rounded-xl transition ease-in-out duration-300 shadow-md'>
+                    <img src={codeicon} alt='icon' className='explogo' /><br></br>
+                    <h3 className='mb-2 text-lg font-semibold'>PROGRAMMING LANGUAGES</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </span>
+                <span className='text-center flex flex-col items-center cursor-pointer hover:bg-yellow-300 hover:text-black m-3 w-56 h-80 align-top bg-transparent border text-white pb-5 rounded-xl transition ease-in-out duration-300 shadow-md'>
+                    <img src={toolicon} alt='icon' className='explogo' /><br></br>
+                    <h3 className='mb-2 text-lg font-semibold'>TOOLS</h3>
+                    <ul>
+                        <li>VS CODE</li>
+                        <li>GIT</li>
+                        <li>Collab</li>
+                        <li>Canva</li>
+                    </ul>
+                </span>
             </div>
-          </li>
-          <li className='mb-6'>
-            <div className='flex items-center gap-1 mb-2' >
-              <h5 className='text-base font-semibold'>Graphic Design</h5>
-              <data className='text-base font-light text-zinc-300' value={70}>70%</data>
-            </div>
-            <div className='w-full h-2 bg-white rounded-lg' >
-              <div className='bg-yellow-400 w-3/4 h-full rounded' >
-              </div>
-            </div>
-          </li>
-          <li className='mb-6'>
-            <div className='flex items-center gap-1 mb-2' >
-              <h5 className='text-base font-semibold'>Branding</h5>
-              <data className='text-base font-light text-zinc-300' value={90}>90%</data>
-            </div>
-            <div className='w-full h-2 bg-white rounded-lg' >
-              <div className='bg-yellow-400 w-11/12 h-full rounded' >
-              </div>
-            </div>
-          </li>
-          <li className='mb-6'>
-            <div className='flex items-center gap-1 mb-2' >
-              <h5 className='text-base font-semibold'>WordPress</h5>
-              <data className='text-base font-light text-zinc-300' value={50}>50%</data>
-            </div>
-            <div className='w-full h-2 bg-white rounded-lg' >
-              <div className='bg-yellow-400 w-2/4 h-full rounded' >
-              </div>
-            </div>
-          </li>
-        </ul>
+        </div>
       </section>
     </div>
   )
