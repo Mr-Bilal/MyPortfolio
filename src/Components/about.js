@@ -225,7 +225,7 @@ const About = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        className="max-w-max mt-44 border-none inset-0 ml-96 items-center justify-center z-50"
+        className="max-w-max mt-44 border-none inset-0 ml-3 md:max-lg:ml-32 lg:max-2xl:ml-96 items-center justify-center z-50"
         overlayClassName="fixed inset-0 bg-black bg-opacity-75 z-40"
         contentLabel="Testimonial Modal"
       >
